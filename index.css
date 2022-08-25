@@ -1,0 +1,307 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+body {
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* width: calc(100vw - 2rem); */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    background: url(images/bg-header-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header>img {
+    margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    margin-top: 8rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+p,
+button {
+    font-weight: 400;
+    font-size: 1.01em;
+    font-family: inherit;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5em;
+    margin-bottom: 3rem;
+}
+
+main {
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.largeImages {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.downloadButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadButtons>button {
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    border-radius: 2rem;
+    border: none;
+    color: #fff;
+
+
+}
+
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 5px 5px 30px 5px hsl(170, 100%, 92%);
+    /* border-radius: 10em;
+    border-bottom: 4px solid;
+    border-bottom-color: red; */
+}
+
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 5px 5px 30px 5px hsl(233, 100%, 92%);
+    /* border-color: green; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.container>img {
+    width: 40%;
+    margin: 0 0 3rem 0;
+}
+
+#ibm,
+#vectorGraphics,
+#hp {
+    width: 30%;
+}
+
+footer {
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 93%);
+    margin-top: 5rem;
+}
+
+footer>a {
+    margin: 1rem 0 0 0;
+}
+
+footer>img {
+    margin: 2rem 0 1rem 0;
+}
+
+.socialMedia>img {
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 2rem 0;
+}
+
+
+@media only screen and (min-width: 1420px) {
+    body {
+        background: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header {
+        margin-top: 4rem;
+    }
+
+    .narrowColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15rem 0 15rem;
+
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        line-height: 1.7em;
+    }
+
+    main {
+        max-width: 80%;
+        align-self: center;
+    }
+
+    .downloadButtons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: -1rem;
+    }
+
+    .downloadButtons>button {
+        margin: 0.5rem;
+    }
+
+    .full-width-small {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .full-width-small>img {
+        margin: 0 0 0 -12rem;
+        max-width: 110%;
+    }
+
+    .full-width-large {
+        /* width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .computerText {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 5rem 6rem 5rem;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #supercharge {
+        margin-top: 4rem;
+    }
+
+
+    #snippits {
+        align-items: baseline;
+        margin-top: -1rem;
+    }
+
+    #logos {
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .snippit {
+        flex-basis: 33%;
+    }
+
+    .logo {
+
+        max-width: 10%;
+    }
+
+    .row>img {
+        max-height: 3rem;
+        max-width: 3rem;
+    }
+}
