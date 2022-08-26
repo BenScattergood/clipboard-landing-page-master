@@ -119,15 +119,17 @@ main {
     padding: 1rem 2rem 1rem 2rem;
     margin: 0 0 1.5rem 0;
     border-radius: 2rem;
-    border: none;
+    
     color: #fff;
     font-weight: 600;
-
 }
 
 .ios {
     background-color: hsl(171, 66%, 44%);
     box-shadow: 5px 5px 30px 5px hsl(170, 100%, 92%);
+    border: none;
+    border-bottom: 4px solid;
+    border-bottom-color: hsl(171, 59%, 35%);
     /* border-radius: 10em;
     border-bottom: 4px solid;
     border-bottom-color: red; */
@@ -136,6 +138,9 @@ main {
 .mac {
     background-color: hsl(233, 100%, 69%);
     box-shadow: 5px 5px 30px 5px hsl(233, 100%, 92%);
+    border: none;
+    border-bottom: 4px solid;
+    border-bottom-color: hsl(233, 66%, 54%);
     /* border-color: green; */
 }
 
@@ -168,8 +173,18 @@ footer {
     margin-top: 5rem;
 }
 
+#footerCopyright {
+    max-width: 3rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.footLinks {
+    display: flex;
+    flex-direction: column;
+}
+
 footer a {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 1rem 0;
 }
 
 footer img {
@@ -184,6 +199,25 @@ footer img {
     display: flex;
     flex-direction: row;
     margin: 2rem 0 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.socialMedia> img:hover {
+    cursor: pointer;
+    
 }
 
 
@@ -252,11 +286,6 @@ footer img {
         justify-content: center;
     }
 
-    .largeImages {
-        /* max-width: 100%;
-        max-height: 30rem; */
-    }
-
     .computerText {
         grid-column-start: 2;
         display: flex;
@@ -312,6 +341,10 @@ footer img {
         height: 10rem;
         display: flex;
         justify-content: center;
+    }
+
+    footer a {
+        margin: 0.5rem 0 0.5rem 0;
     }
 
     #foot {
